@@ -38,7 +38,7 @@
     body{background:url("images/bg-grid.png") repeat scroll 0 0 #FFF;color:#555;font:normal 1em/1.5 "Lucida Grande","Lucida Sans Unicode", "Lucida Sans",Tahoma,sans-serif;margin:0;}
     a,a:visited,a:active{color:#008EE8}
     a:hover{color:#333}
-    h1,h2,h3,h4,h5,h6{color:#111;font-family:Georgia,serif;font-weight:normal}
+    h1,h2,h3,h4,h5,h6{color:#111;font-family: "Helvetica Neue",Helvetica,sans-serif;font-weight:normal}
     p{margin:0 0 1.5em}
     ul,ol{margin:0 0 1.5em;padding-left:2.5em}
     blockquote{border-left:2px solid #888;color:#888;margin:0 1em 1.5em;padding:0 1em}
@@ -47,14 +47,16 @@
     #container{margin:0 auto;min-width:500px;width:37em}
 
     /* HEADER */
-    #header h1{margin:0 0 3em;padding:0;}
+    #header h1{margin:0 0 .5em;padding:0;}
     #header h1 a{border:0;color:#111;text-decoration:none;}
     #header h1 a:hover{color:#76a34c;}
-    #header #navigation{float:right;list-style:none;margin:0.75em 0 3.75em;padding:0}
+    #header #navigation{float:right;list-style:none;margin:0.5em 0 .5em;padding:0}
     #header #navigation li{display:inline-block;margin:0 0.25em}
+    #header #navigation a, #header #navigation a:visited, #header #navigation a:active{color:#757575}
     #header #navigation a{border-bottom:2px solid #DDD;font-size:1.2em;line-height:1.8em;padding:0.25em;text-decoration:none}
     #header #navigation a:hover{border-bottom-color:#333;text-decoration:none}
     #header .logo{background-image: url("images/blog-logo.png");background-repeat: no-repeat;text-indent: -2000px;width:223px;height:38px;}
+    #header #tagline {border-bottom: 1px dotted #BBB;color: #888;font-size: 12px;margin: 0 0 3.5em;padding-bottom: 1em;text-shadow: 1px 1px 0 #F3F3F3;}
 
     /* POSTS */
     #posts { clear: left; }
@@ -93,10 +95,10 @@
     #pagination #pagecount{color:#888;margin:0 1.5em}
 
     /* FOOTER */
-    #footer{border-top:5px solid #76a34c;background:#222;color:#888;float:left;overflow:visible;padding:0 0 1.5em;width:100%}
-    #footer a{text-decoration:none}
-    #footer a:hover{color:#888;}
-    #footer h3{border-bottom:1px solid #888;color:#888;font-size:1.5em;margin:2em 0 0.25em}
+    #footer{border-top:1px solid #454545;background:#666;color:#DDD;float:left;overflow:visible;padding:0 0 1.5em;width:100%}
+    #footer a{text-decoration:underline;color:#DDD;}
+    #footer a:hover{color:#FFF;}
+    #footer h3{color:#DDD;font-size:1.5em;margin:2em 0 0.25em}
     #footer ul{list-style:none;padding:0}
     #footer ul li{line-height:2}
     
@@ -104,10 +106,14 @@
     #footer #following li { line-height: 30px; display: inline; }
 
     /* FOOTER LAYOUT */ 
-    #footer-contain{margin:0 auto;padding:0;width:50em}
-    #footer-left{float:left;width:15em}
-    #footer-middle{float:left;margin-left:2.5em;width:15em}
-    #footer-right{float:left;margin-left:2.5em;width:15em}
+    #footer-contain{margin:0 auto;padding:0;width:37em}
+    #footer-left{float:left;width:18em}
+    #footer-right{float:left;margin-left:.7em;width:18em}
+    #twitter_update_list{font-size:85%}
+    
+    #colophon{clear:both;font-style: italic;font-size:75%;margin-top:5em;}
+    
+    
     
     /* SEARCH */
     #search input{display:inline;}
@@ -128,15 +134,13 @@
     <div id="container">
       <div id="header">
         <ul id="navigation">
-        
-        
-        
           <li><a href="#" title="Home">Home</a></li>
           <li><a href="#" title="Twitter">Twitter</a></li>
           <li><a href="#" title="http://demo.tumblr.com/rss">RSS</a></li>
         </ul>
       
         <h1 class="logo"><a href="#" title="/">AutoMate</a></h1>
+        <div id="tagline">AutoMate is new, easy-to-use vehicle &amp; fleet management system.</div>
       </div> <!-- end #header -->
   
       <div id="posts">
@@ -438,25 +442,19 @@
   
     <div id="footer">
       <div id="footer-contain">
+        <h3 id="about">About</h3>
+        <p>AutoMate is a new vehicle &amp; fleet management solution that lets you focus on your business without 
+          neglecting your fleet. Keep your complete vehicle maintenance history in one place and be reminded when 
+          it's the right time for the right service.</p>
       
         <div id="footer-left">
           <!-- Twitter Badge -->
           <!-- Uncomment and change username to use -->
-          <!--
-          <h3 id="twitter">Latest Tweet</h3>
+          <h3 id="twitter">AutoMate on Twitter</h3>
           <ul id="twitter_update_list">
             <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-            <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/username.json?count=1&amp;callback=twitterCallback2"></script>
+            <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/automateapp.json?count=1&amp;callback=twitterCallback2"></script>
           </ul>
-          -->
-        
-          <h3 id="about">About</h3>
-          Description
-        </div>
-
-        <div id="footer-middle">
-          <h3 id="blogroll">Blogroll</h3>
-        
         </div>
 
         <div id="footer-right">      
@@ -466,11 +464,10 @@
                 <input type="text" name="q" value="" size="17"/>
                 <input type="submit" value="Search"/>
             </form>
-          </div>
-        
-          <h3 id="colophon">Colophon</h3>
-          <p>This tumblelog is powered by <a href="#" title="http://tumblr.com/">Tumblr</a> and was designed by <a href="#" title="http://cubicle17.com/">Bill Israel</a>.</p>
+          </div>        
         </div>
+        
+        <div id="colophon">This blog is powered by <a href="#" title="http://tumblr.com/">Tumblr</a> and is based on a design by <a href="#" title="http://cubicle17.com/">Bill Israel</a>.</p>
       
       </div> <!-- end footer contain -->
     </div> <!-- end footer -->
