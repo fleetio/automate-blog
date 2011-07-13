@@ -33,290 +33,280 @@
   <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
   
   <style type="text/css" media="screen">
-    html{font-size:87.5%}
-    body{background:url("http://www.automateapp.com/images/blog/bg-grid.png") repeat scroll 0 0 #FFF;color:#555;font:normal 1em/1.5 "Lucida Grande","Lucida Sans Unicode", "Lucida Sans",Tahoma,sans-serif;margin:0;}
-    a,a:visited,a:active{color:#008EE8}
-    a:hover{color:#333}
-    h1,h2,h3,h4,h5,h6{color:#111;font-family: "Helvetica Neue",Helvetica,sans-serif;font-weight:normal}
-    p{margin:0 0 1.5em}
-    ul,ol{margin:0 0 1.5em;padding-left:2.5em}
-    blockquote{border-left:2px solid #888;color:#888;margin:0 1em 1.5em;padding:0 1em}
-    /* LAYOUT */
-    #wrapper{background: url("http://www.automateapp.com/images/blog/bg-top.png") repeat-x scroll 0 1px transparent;padding:3em 0 0}
-    #container{margin:0 auto;min-width:500px;width:37em}
+  html{font-size:87.5%}
+  body{background:url("http://www.automateapp.com/images/blog/bg-grid.png") repeat scroll 0 0 #FFF;color:#555;font:normal 1em/1.5 "Lucida Grande","Lucida Sans Unicode", "Lucida Sans",Tahoma,sans-serif;margin:0;}
+  a,a:visited,a:active{color:#008EE8}
+  a:hover{color:#333}
+  h1,h2,h3,h4,h5,h6{color:#555;font-family: "Helvetica Neue",Helvetica,sans-serif;font-weight:normal}
+  h3,h4,h5,h6{font-weight:bold;}
+  p{margin:0 0 1.5em}
+  ul,ol{margin:0 0 1.5em;padding-left:2.5em}
+  blockquote{border-left:2px solid #888;color:#888;margin:0 1em 1.5em;padding:0 1em}
+  /* LAYOUT */
+  #wrapper{background: url("http://www.automateapp.com/images/blog/bg-top.png") repeat-x scroll 0 1px transparent;padding:3em 0 0}
+  #container{margin:0 auto;min-width:500px;width:37em}
 
-    /* HEADER */
-    #header h1{margin:0 0 .5em;padding:0;}
-    #header h1 a{border:0;color:#111;text-decoration:none;}
-    #header h1 a:hover{color:#76a34c;}
-    #header #navigation{float:right;list-style:none;margin:0.5em 0 .5em;padding:0}
-    #header #navigation li{display:inline-block;margin:0 0.25em}
-    #header #navigation a, #header #navigation a:visited, #header #navigation a:active{color:#757575}
-    #header #navigation a{border-bottom:2px solid #DDD;font-size:1.2em;line-height:1.8em;padding:0.25em;text-decoration:none}
-    #header #navigation a:hover{border-bottom-color:#333;text-decoration:none}
-    #header .logo{background-image: url("http://www.automateapp.com/images/blog/blog-logo.png");background-repeat: no-repeat;text-indent: -2000px;width:223px;height:38px;}
-    #header #tagline {border-bottom: 1px dotted #BBB;color: #888;font-size: 12px;margin: 0 0 3.5em;padding-bottom: 1em;text-shadow: 1px 1px 0 #F3F3F3;}
+  /* HEADER */
+  #header h1{margin:0 0 .5em;padding:0;}
+  #header h1 a{border:0;color:#111;text-decoration:none;}
+  #header h1 a:hover{color:#76a34c;}
+  #header #navigation{float:right;list-style:none;margin:0.5em 0 .5em;padding:0}
+  #header #navigation li{display:inline-block;margin:0 0.25em}
+  #header #navigation a, #header #navigation a:visited, #header #navigation a:active{color:#757575}
+  #header #navigation a{border-bottom:2px solid #DDD;font-size:1.2em;line-height:1.8em;padding:0.25em;text-decoration:none}
+  #header #navigation a:hover{border-bottom-color:#333;text-decoration:none}
+  #header .logo{background-image: url("http://www.automateapp.com/images/blog/blog-logo.png");background-repeat: no-repeat;text-indent: -2000px;width:223px;height:38px;}
+  #header #tagline {border-bottom: 1px dotted #BBB;color: #888;font-size: 12px;margin: 0 0 3.5em;padding-bottom: 1em;text-shadow: 1px 1px 0 #F3F3F3;}
 
-    /* POSTS */
-    #posts { clear: left; }
-    .text,.link,.quote,.photo,.video,.audio,.chat,.photoset-post{border-bottom:1px dotted #bbb;margin-bottom:4.5em;}
-    .link .link-description{margin:0 0 1.5em}
-    .quote .words{border:0;color:#333;font:normal 1.2em/1.3 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;margin:0 0 1em;padding:0}
-    .quote .source{color:#888;font-style:italic}
-    .photo,.video, .photoset-post{text-align:center}
-    .photo .caption,.video .caption,.audio .caption,.quote .source,.photoset-post .caption{clear: right;margin-bottom:1.5em;margin-top:0.75em;text-align:left}
-    .photo a img{border:0;}
-    .chat ul.convo{list-style-type:none;padding:0;}
-    .chat ul.convo li{line-height:2;}
-    .chat ul.convo li .person { font-weight: bold; }
-    .chat ul.convo li.even .person{color:#76a34c;}
-    .audio .playcount { float: right; }
+  /* POSTS */
+  #posts { clear: left; }
+  #posts h2{font-size: 2.1em;letter-spacing: -1px;line-height: 100%;}
+  .text,.link,.quote,.photo,.video,.audio,.chat,.photoset-post{border-bottom:1px dotted #bbb;margin-bottom:4.5em;}
+  .link .link-description{margin:0 0 1.5em}
+  .quote .words{border:0;color:#333;font:normal 1.2em/1.3 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;margin:0 0 1em;padding:0}
+  .quote .source{color:#888;font-style:italic}
+  .photo,.video, .photoset-post{text-align:center}
+  .photo .caption,.video .caption,.audio .caption,.quote .source,.photoset-post .caption{clear: right;margin-bottom:1.5em;margin-top:0.75em;text-align:left}
+  .photo a img{border:0;}
+  .chat ul.convo{list-style-type:none;padding:0;}
+  .chat ul.convo li{line-height:2;}
+  .chat ul.convo li .person { font-weight: bold; }
+  .chat ul.convo li.even .person{color:#76a34c;}
+  .audio .playcount { float: right; }
 
-    /* POST FOOTERS */
-    .post-footer{list-style:none;font-size:0.857em;margin:3em 0;padding:0;text-align:right;}
-    .post-footer li{display:inline;margin-left:1em;padding:0}
-    
-    /* REBLOG */
-    .post-footer li.reblog{color:#888;display:block;font-style:italic;margin-bottom:0.25em}
-    .post-footer li.date h3{coloar:#888;display:inline;font-family:Helvetica,Arial,sans-serif;font-size:1em}
-    
-    /* TAGS */
-    .post-footer li.tags ul, .post-footer li.tags ul li{display:inline; padding: 0;}
-    .post-footer li.tags ul li {margin-left: 0.4em;}
-	
+  /* POST FOOTERS */
+  .post-footer{list-style:none;font-size:0.857em;margin:3em 0;padding:0;text-align:right;}
+  .post-footer li{display:inline;margin-left:1em;padding:0}
+  .post-footer, .post-footer h3 {color:#757575;}
+  
+  /* REBLOG */
+  .post-footer li.reblog{color:#888;display:block;font-style:italic;margin-bottom:0.25em}
+  .post-footer li.date h3{coloar:#888;display:inline;font-family:Helvetica,Arial,sans-serif;font-size:1em}
+  
+  /* TAGS */
+  .post-footer li.tags ul, .post-footer li.tags ul li{display:inline; padding: 0;}
+  .post-footer li.tags ul li {margin-left: 0.4em;}
+
 	/* NOTES */
 	ol.notes { margin: 0; padding: 0; }
 	ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
 	ol.notes img.avatar { display: none; }
 
-    /* PAGINATION */
-    #pagination{margin:3em 0}
-    #pagination #pagecount{color:#888;margin:0 1.5em}
+  /* PAGINATION */
+  #pagination{margin:3em 0}
+  #pagination #pagecount{color:#888;margin:0 1.5em}
 
-    /* FOOTER */
-    #footer{border-top:1px solid #454545;background:#666;color:#DDD;float:left;overflow:visible;padding:0 0 1.5em;width:100%}
-    #footer a{text-decoration:underline;color:#DDD;}
-    #footer a:hover{color:#FFF;}
-    #footer h3{color:#DDD;font-size:1.5em;margin:2em 0 0.25em}
-    #footer ul{list-style:none;padding:0}
-    #footer ul li{line-height:2}
-    
-    /* FOLLOWING LIST */
-    #footer #following li { line-height: 30px; display: inline; }
+  /* FOOTER */
+  #footer{border-top:1px solid #454545;background:#666;color:#DDD;float:left;overflow:visible;padding:0 0 1.5em;width:100%}
+  #footer a{text-decoration:underline;color:#DDD;}
+  #footer a:hover{color:#FFF;}
+  #footer h3{color:#DDD;font-size:1.5em;margin:2em 0 0.25em}
+  #footer ul{list-style:none;padding:0}
+  #footer ul li{line-height:2}
+  
+  /* FOLLOWING LIST */
+  #footer #following li { line-height: 30px; display: inline; }
 
-    /* FOOTER LAYOUT */ 
-    #footer-contain{margin:0 auto;padding:0;width:37em}
-    #footer-left{float:left;width:18em}
-    #footer-right{float:left;margin-left:.7em;width:18em}
-    #twitter_update_list{font-size:85%}
-    
-    #colophon{clear:both;font-style: italic;font-size:75%;margin-top:5em;}
-    
-    
-    
-    /* SEARCH */
-    #search input{display:inline;}
-    #searchresultcount{font-style:italic;margin: 3em 0;text-align: center;}
-    #searchresultcount .query{font-weight:bold;}
-    
-    .search_query, .tag {
-        font-weight: bold;
-    }
-    
-    /* CUSTOM CSS */
+  /* FOOTER LAYOUT */ 
+  #footer-contain{margin:0 auto;padding:0;width:37em}
+  #footer-left{float:left;width:18em}
+  #footer-right{float:left;margin-left:.7em;width:18em}
+  #twitter_update_list{font-size:85%}
+  
+  #colophon{clear:both;font-style: italic;font-size:75%;margin-top:5em;}
+  
+  
+  
+  /* SEARCH */
+  #search input{display:inline;}
+  #searchresultcount{font-style:italic;margin: 3em 0;text-align: center;}
+  #searchresultcount .query{font-weight:bold;}
+  
+  .search_query, .tag {
+      font-weight: bold;
+  }
+  
+  /* CUSTOM CSS */
     {CustomCSS}
   </style>
 </head>
 
 <body>
-  <div id="container">
-    <div id="header">
-      <ul id="navigation">
-        {block:HasPages}
-          {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
-        {/block:HasPages}
-        {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
-        {block:SubmissionsEnabled}<li><a href="/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
-        <li><a href="#footer">{lang:About}</a></li>
-        <li><a href="/archive">{lang:Archive}</a></li>
-        <li><a href="{RSS}">{lang:RSS}</a></li>
-      </ul>
-      
-      <h1><a href="/">{Title}</a></h1>
-    </div> <!-- end #header -->
-  
-    <div id="posts">
-    {block:SearchPage}
-    <div id="searchresultcount">
-      {block:SearchResults}
-        <p>{lang:Your search for SearchQuery returned SearchResultCount results 2}</p>
-      {block:SearchResults}
-    
-      {block:NoSearchResults}
-        <p>{lang:No search results for SearchQuery 2}</p>
-      {block:NoSearchResults}
-    </div>
-    {/block:SearchPage}
-      
-    {block:Posts}
-      {block:Text}
-      <div class="text">
-        {block:Title}<h2>{Title}</h2>{/block:Title}
-        {Body}
-      {/block:Text}
-
-      
-      {block:Quote}
-      <div class="quote">
-        <blockquote class="words">&#8220;{Quote}&#8221;</blockquote>
-        {block:Source}<div class="source">{Source}</div>{/block:Source}
-      {/block:Quote}
-
-
-      {block:Link}
-      <div class="link">
-        <h2><a href="{URL}" {Target}>{Name}</a></h2>
-        {block:Description}
-        <div class="link-description">
-          {Description}
-        </div>
-        {/block:Description}
-      {/block:Link}
-
-      
-      {block:Video}
-      <div class="video">
-        {Video-500}
-        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-      {/block:Video}
-      
-
-      
-      {block:Audio}
-      <div class="audio">
-        <span class="playcount">{lang:Played PlayCount times}</span>
-        {AudioPlayerBlack}
-        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-      {/block:Audio}
-
-      
-      {block:Photo}
-      <div class="photo">
-        {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
-        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-      {/block:Photo}
-
-			{block:Photoset}
-			<div class="photoset-post">
-				{Photoset-500}
-				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			{/block:Photoset}
-      
-      
-      {block:Chat}
-      <div class="chat">
-        {block:Title}<h2>{Title}</h2>{/block:Title}
-        <ul class="convo">
-          {block:Lines}
-          <li class="{Alt}">
-            <span class="person">{block:Label}{Label}{/block:Label}</span>
-            <span class="line">{Line}</span>
-          </li>
-          {/block:Lines}
+  <div id="wrapper">
+    <div id="container">
+      <div id="header">
+        <ul id="navigation">
+          {block:HasPages}
+            {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+          {/block:HasPages}
+          {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
+          {block:SubmissionsEnabled}<li><a href="/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
+          <li><a href="http://www.automateapp.com">Home</a></li>
+          <li><a href="https://twitter.com/automateapp">Twitter</a></li>
+          <li><a href="{RSS}">{lang:RSS}</a></li>
         </ul>
-      {/block:Chat}
       
-        <ul class="post-footer">
-          {block:RebloggedFrom}<li class="reblog">{lang:Reblogged from ReblogParentTitle 2}</li>{/block:RebloggedFrom}
-          {block:HasTags}<li class="tags">{lang:Tags}: <ul>{block:Tags}<li><a href="{TagURL}">{Tag}</a></li>{/block:Tags}</ul></li>{/block:HasTags}
-          {block:Date}<li class="date"><h3>{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}{/block:Date}</h3>{block:IfShowNotes}{block:NoteCount}<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}</li>
-          {block:Date}
-          {block:IfNotDisqusShortname}<li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>{/block:IfNotDisqusShortname}
-		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="permalink">{lang:Comments}</a></li>{block:IfDisqusShortname}
-          {/block:Date}
-        </ul>
-      </div> <!-- end single post -->
-      {/block:Posts}
+        <h1 class="logo"><a href="/">{Title}</a></h1>
+        <div id="tagline">AutoMate is new, easy-to-use vehicle &amp; fleet management system.</div>
+      </div> <!-- end #header -->
+  
+      <div id="posts">
+      {block:SearchPage}
+      <div id="searchresultcount">
+        {block:SearchResults}
+          <p>{lang:Your search for SearchQuery returned SearchResultCount results 2}</p>
+        {block:SearchResults}
+    
+        {block:NoSearchResults}
+          <p>{lang:No search results for SearchQuery 2}</p>
+        {block:NoSearchResults}
+      </div>
+      {/block:SearchPage}
+      
+      {block:Posts}
+        {block:Text}
+        <div class="text">
+          {block:Title}<h2>{Title}</h2>{/block:Title}
+          {Body}
+        {/block:Text}
 
-      {block:Permalink}
-      {block:IfShowNotes}
-      {block:PostNotes}
-      <h4>{lang:Notes}</h4>
-      {PostNotes}
-      {block:PostNotes}
-      {/block:IfShowNotes}
       
-	  {block:IfDisqusShortname}
-      <div id="disqus_thread"></div>
-      <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-      <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
-      {/block:IfDisqusShortname}
-      {/block:Permalink}
-    </div> <!-- end posts -->
+        {block:Quote}
+        <div class="quote">
+          <blockquote class="words">&#8220;{Quote}&#8221;</blockquote>
+          {block:Source}<div class="source">{Source}</div>{/block:Source}
+        {/block:Quote}
+
+
+        {block:Link}
+        <div class="link">
+          <h2><a href="{URL}" {Target}>{Name}</a></h2>
+          {block:Description}
+          <div class="link-description">
+            {Description}
+          </div>
+          {/block:Description}
+        {/block:Link}
+
+      
+        {block:Video}
+        <div class="video">
+          {Video-500}
+          {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+        {/block:Video}
+      
+
+      
+        {block:Audio}
+        <div class="audio">
+          <span class="playcount">{lang:Played PlayCount times}</span>
+          {AudioPlayerBlack}
+          {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+        {/block:Audio}
+
+      
+        {block:Photo}
+        <div class="photo">
+          {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+          {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+        {/block:Photo}
+
+  			{block:Photoset}
+  			<div class="photoset-post">
+  				{Photoset-500}
+  				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+  			{/block:Photoset}
+      
+      
+        {block:Chat}
+        <div class="chat">
+          {block:Title}<h2>{Title}</h2>{/block:Title}
+          <ul class="convo">
+            {block:Lines}
+            <li class="{Alt}">
+              <span class="person">{block:Label}{Label}{/block:Label}</span>
+              <span class="line">{Line}</span>
+            </li>
+            {/block:Lines}
+          </ul>
+        {/block:Chat}
+      
+          <ul class="post-footer">
+            {block:RebloggedFrom}<li class="reblog">{lang:Reblogged from ReblogParentTitle 2}</li>{/block:RebloggedFrom}
+            {block:HasTags}<li class="tags">{lang:Tags}: <ul>{block:Tags}<li><a href="{TagURL}">{Tag}</a></li>{/block:Tags}</ul></li>{/block:HasTags}
+            {block:Date}<li class="date"><h3>{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}{/block:Date}</h3>{block:IfShowNotes}{block:NoteCount}<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}</li>
+            {block:Date}
+            {block:IfNotDisqusShortname}<li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>{/block:IfNotDisqusShortname}
+  		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="permalink">{lang:Comments}</a></li>{block:IfDisqusShortname}
+            {/block:Date}
+          </ul>
+        </div> <!-- end single post -->
+        {/block:Posts}
+
+        {block:Permalink}
+        {block:IfShowNotes}
+        {block:PostNotes}
+        <h4>{lang:Notes}</h4>
+        {PostNotes}
+        {block:PostNotes}
+        {/block:IfShowNotes}
+      
+  	  {block:IfDisqusShortname}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+        <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+        {/block:IfDisqusShortname}
+        {/block:Permalink}
+      </div> <!-- end posts -->
     
-    {block:Pagination}
-    <div id="pagination">
-      {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
-      <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
-      {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
-    </div>
-    {/block:Pagination}
+      {block:Pagination}
+      <div id="pagination">
+        {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
+        <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
+        {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
+      </div>
+      {/block:Pagination}
     
-    {block:PermalinkPagination}
-    <div id="pagination">
-      {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
-      <span id="pagecount">&nbsp;</span>
-      {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
-    </div>
-    {/block:PermalinkPagination}
+      {block:PermalinkPagination}
+      <div id="pagination">
+        {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
+        <span id="pagecount">&nbsp;</span>
+        {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
+      </div>
+      {/block:PermalinkPagination}
     
-  </div> <!-- end container -->
+    </div> <!-- end container -->
   
   
-  <div id="footer">
-    <div id="footer-contain">
+    <div id="footer">
+      <div id="footer-contain">
       
-      <div id="footer-left">
-        <!-- Twitter Badge -->
-        <!-- Uncomment and change username to use -->
-        <!--
-        <h3 id="twitter">Latest Tweet</h3>
-        <ul id="twitter_update_list">
-          <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-          <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/username.json?count=1&amp;callback=twitterCallback2"></script>
-        </ul>
-        -->
-        
         <h3 id="about">{lang:About}</h3>
-        {Description}
-      </div>
-
-      <div id="footer-middle">
-        <h3 id="blogroll">Blogroll</h3>
-        {block:Following}
-        <ul id="following">
-          {block:Followed}
-          <li><a href="{FollowedURL}" title="{FollowedTitle}"><img src="{FollowedPortraitURL-30}" alt="{FollowedName}"/></a></li>
-          {/block:Followed}
-        </ul>
-        {/block:Following}
-      </div>
-
-      <div id="footer-right">      
-        <h3 id="search-title">{lang:Search}</h3>
-        <div id="search">
-          <form action="/search" method="get">
-              <input type="text" name="q" value="{SearchQuery}" size="17"/>
-              <input type="submit" value="Search"/>
-          </form>
-        </div>
-        
-        <h3 id="colophon">Colophon</h3>
-        <p>This tumblelog is powered by <a href="http://tumblr.com/">Tumblr</a> and was designed by <a href="http://cubicle17.com/">Bill Israel</a>.</p>
-      </div>
+        <p>{Description}</p>
       
-    </div> <!-- end footer contain -->
-  </div> <!-- end footer -->
+        <div id="footer-left">
+          <h3 id="twitter">AutoMate on Twitter</h3>
+          <ul id="twitter_update_list">
+            <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+            <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/automateapp.json?count=1&amp;callback=twitterCallback2"></script>
+          </ul>
+        </div>
+
+        <div id="footer-right">      
+          <h3 id="search-title">{lang:Search}</h3>
+          <div id="search">
+            <form action="/search" method="get">
+                <input type="text" name="q" value="{SearchQuery}" size="17"/>
+                <input type="submit" value="Search"/>
+            </form>
+          </div>
+        </div>
+      
+        <div id="colophon">This blog is powered by <a href="#" title="http://tumblr.com/">Tumblr</a> and is based on a design by <a href="#" title="http://cubicle17.com/">Bill Israel</a>.</div>
+      
+      </div> <!-- end footer contain -->
+    </div> <!-- end footer -->
+  </div>
 
 	{block:IfDisqusShortname}
   <script type="text/javascript">
